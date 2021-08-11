@@ -1,0 +1,39 @@
+<head>
+    <title>
+        Calculator 
+    </title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body >
+    <div id="grudge">
+        <h1 style="color: white;">
+            Online calculator
+        </h1> 
+        <h2 style="color: white;">
+        MADE BY PRIYANSHU</h2>
+    <form name="form1" class='cal' action="calculator.html" method="POST">
+        <input type="text" name="expression" id="display"><br>
+        <input type="button" class="btn" value="C" onclick="form1.expression.value=''">
+        <input type="button" class="btn" value="<" onclick="form1.expression.value=form1.expression.value.substring(0,form1.expression.value.length*1-1)">
+        <input type="button" class="btn" value="=" onclick="form1.expression.value=eval(form1.expression.value)"><br>
+        <input type="button" class="btn" value="7" onclick="form1.expression.value+='7'">
+        <input type="button" class="btn" value="8" onclick="form1.expression.value+='8'">
+        <input type="button" class="btn" value="9" onclick="form1.expression.value+='9'"><br>
+        <input type="button" class="btn" value="6" onclick="form1.expression.value+='6'">
+        <input type="button" class="btn" value="5" onclick="form1.expression.value+='5'">
+        <input type="button" class="btn" value="4" onclick="form1.expression.value+='4'"><br>
+        <input type="button" class="btn" value="3" onclick="form1.expression.value+='3'">
+        <input type="button" class="btn" value="2" onclick="form1.expression.value+='2'">
+        <input type="button" class="btn" value="1" onclick="form1.expression.value+='1'"><br>
+        <input type="button" class="opbtn" value="*" onclick="form1.expression.value+='*'">
+        <input type="button" class="opbtn" value="-" onclick="form1.expression.value+='-'">
+        <input type="button" class="opbtn" value="+" onclick="form1.expression.value+='+'"><br>
+        <input type="button" class="opbtn" value="(" onclick="form1.expression.value+='('">
+        <input type="button" class="opbtn" value=")" onclick="form1.expression.value+=')'">
+        <input type="button" class="opbtn" value="/" onclick="form1.expression.value+='/'"><br>
+        <input type="button" class="opbtn" value="." onclick="form1.expression.value+='.'">
+        <input type="button" id="zero" value="0" onclick="form1.expression.value+='0'">
+        
+    </form>
+</div>
+</body>
